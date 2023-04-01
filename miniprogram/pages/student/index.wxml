@@ -1,0 +1,12 @@
+<!--pages/student/index.wxml-->
+<l-index-list>
+  <view wx:for="{{studentInfo}}" wx:key="_id">
+    <view bindtap="showStudentInfo" data-id="{{item}}">
+      <l-card class="card" type="primary" plaintext="{{true}}">
+        <view> {{item.Name}} </view>
+      </l-card>
+      <l-dialog/>
+    </view>
+  </view>
+</l-index-list>
+

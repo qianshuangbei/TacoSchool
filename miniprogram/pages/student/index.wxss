@@ -1,0 +1,10 @@
+/* pages/student/index.wxss */
+.NameEntity{
+  font-size: 40rpx;
+  color:slateblue;
+  text-align: left;
+  margin: 10rpx auto 0 auto;
+}
+.card{
+  margin: 0rpx;
+}

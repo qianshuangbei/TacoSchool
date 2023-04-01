@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "l-index-list": "../../miniprogram_npm/lin-ui/index-list/index",
+    "l-index-anchor": "../../miniprogram_npm/lin-ui/index-anchor/index",
+    "l-card": "../../miniprogram_npm/lin-ui/card",
+    "l-dialog": "../../miniprogram_npm/lin-ui/dialog"
+  },
+  "navigationBarTitleText": "学生名单"
+}

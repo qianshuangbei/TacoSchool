@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/classroom/index",
+    "pages/rollcall/index",
+    "pages/student/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/student/index",
+        "text": "学生"
+      },
+      {
+        "pagePath": "pages/classroom/index",
+        "text": "课程"
+      }
+    ]
+
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

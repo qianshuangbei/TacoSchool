@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-4ggxyig7879ad3fb --n quickstartFunctions --r --project "/Users/qianshuangbei/Code/TacoSchool" --report_first --report

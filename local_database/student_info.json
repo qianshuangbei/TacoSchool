@@ -1,0 +1,8 @@
+{
+    "Name": "Anna",
+    "RemainClassNum": 10,
+    "CreateDate": "Wed Mar 01 2023 14:24:06 GMT+0800 (China Standard Time)",
+    "Contact": "+86 xxxxxxxx",
+    "Classroom": ["{Weekday}_{xth}", "{Weekday_xth}"],
+    "Grade": "Primary_5th"
+}

@@ -1,0 +1,4 @@
+/* pages/classroom/index.wxss */
+.card {
+  margin: 10rpx;
+}

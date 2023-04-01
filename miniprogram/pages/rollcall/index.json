@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "l-index-card": "../../miniprogram_npm/lin-ui/card",
+    "l-dialog": "../../miniprogram_npm/lin-ui/dialog"
+  },
+  "navigationBarTitleText": "课堂点名"
+}

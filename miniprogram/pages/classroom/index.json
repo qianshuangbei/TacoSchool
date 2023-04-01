@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-index-card": "../../miniprogram_npm/lin-ui/card"
+  },
+  "navigationBarTitleText": "今日课程"
+}

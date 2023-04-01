@@ -1,0 +1,4 @@
+/* pages/rollcall/index.wxss */
+.card {
+  margin: 10rpx;
+}
