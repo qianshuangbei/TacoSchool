@@ -22,12 +22,19 @@ Page({
   showStudentInfo(event){
     //console.log(event)
     var item = event.currentTarget.dataset.id;
-    wx.lin.showDialog({
-      type: "alert",     
-      title: item.Name,
-      content: "剩余课时: " + item.RemainClassNum,
-      success: () => {}
-    })
+    const db = wx.cloud.database();
+    db.collection('StudentInfo').doc(item._id).get(
+      {
+        success:function(res){
+          wx.lin.showDialog({
+            type: "alert",     
+            title: res.data.Name,
+            content: "剩余课时: " + res.data.RemainClassNum,
+            success: () => {}
+          })
+        }
+      }
+    );
   },
   /**
    * Lifecycle function--Called when page load

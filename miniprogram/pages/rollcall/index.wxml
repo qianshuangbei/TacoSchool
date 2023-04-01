@@ -2,19 +2,18 @@
 <l-index-card class="card" 
 							type="primary"
 							image=""
-							title="Lesson One">
-	<view class="content">Teacher: Shella</view>
-	<view class="content">Students: </view>
-	<view class="content">Anna</view>
-	<view class="content">Ann</view>
+							title="Lesson {{index}}">
+							<view class="content">Teacher: Shella</view>
+				<view class="content">Students: </view>
+				<view wx:for="{{currentClassInfo}}" wx:for-index="cidx" wx:for-item="citem">
+					<view class="content">{{citem.Name}}</view>
+				</view>
+				<view class="content">{{time}}</view>
 </l-index-card>
 
-<view>
-  <button bindtap="showRollCall" data-id="Ann">Ann</button>
+
+<view wx:for="{{currentClassInfo}}" wx:for-index="cidx" wx:for-item="citem">
+	<button bindtap="showRollCall" data-id="{{citem}}">{{citem.Name}}</button>
   <l-dialog/>
 </view>
 
-<view>
-  <button bindtap="showRollCall" data-id="Anna">Anna</button>
-  <l-dialog/>
-</view>
