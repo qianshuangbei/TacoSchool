@@ -2,7 +2,7 @@
 <l-index-card class="card" 
 							type="primary"
 							image=""
-							title="Lesson {{index}}">
+							title="Lesson {{index+1}}">
 							<view class="content">Teacher: Shella</view>
 				<view class="content">Students: </view>
 				<view wx:for="{{currentClassInfo}}" wx:for-index="cidx" wx:for-item="citem">
