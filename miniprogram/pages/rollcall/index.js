@@ -27,8 +27,8 @@ Page({
     // Format the date as a string
     var formattedDate = year + '-' + month + '-' + day;
     this.setData({today: formattedDate})
-
   },
+
   showRollCall(event){
     var student = event.currentTarget.dataset.id;
     var order_key = this.data.today + student.Name
@@ -103,18 +103,19 @@ Page({
     var todaylessons = wx.getStorageSync('todaylessons');
     const eventChannel = this.getOpenerEventChannel()
     var idx = 0
-    eventChannel.emit('acceptDataFromOpenedPage', {data: 'test'});
-    eventChannel.emit('someEvent', {data: 'test'});
+    // eventChannel.emit('acceptDataFromOpenedPage', {data: 'test'});
+    // eventChannel.emit('someEvent', {data: 'test'});
     // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
-    eventChannel.on('acceptDataFromOpenerPage', function(data) {
-      idx = data.data
+    // eventChannel.on('acceptDataFromOpenerPage', function(data) {
+    //   idx = data.data
+    // })
+    eventChannel.on('acceptDataFromOpenerPage', data=>{
+      idx = data
+      this.setData({index: idx})
+      this.setData({time: todaylessons[idx]})
+      this.setData({currentClassInfo: classInfo[idx+1]})
     })
-    // console.log(idx)
-    // console.log(todaylessons[idx])
-    // console.log(classInfo[idx+1])
-    this.setData({index: idx})
-    this.setData({time: todaylessons[idx]})
-    this.setData({currentClassInfo: classInfo[idx+1]})
+    
   },
 
   /**

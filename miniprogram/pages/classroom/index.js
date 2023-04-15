@@ -70,16 +70,17 @@ Page({
       url: '../rollcall/index',
       events: {
         // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
-        acceptDataFromOpenedPage: function(data) {
-          console.log("acceptDataFromOpenedPage")
-        },
-        someEvent: function(data) {
-          console.log("someEvent")
-        }
+        // acceptDataFromOpenedPage: function(data) {
+        //   console.log("acceptDataFromOpenedPage")
+        // },
+        // someEvent: function(data) {
+        //   console.log("someEvent")
+        // }
       },
       success: function(res) {
         // 通过eventChannel向被打开页面传送数据
-        res.eventChannel.emit('acceptDataFromOpenerPage', { data: e.currentTarget.dataset.idx})
+        // res.eventChannel.emit('acceptDataFromOpenerPage', { data: e.currentTarget.dataset.idx})
+        res.eventChannel.emit('acceptDataFromOpenerPage', e.currentTarget.dataset.idx)
       }
     })
   },
